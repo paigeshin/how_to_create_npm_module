@@ -5,6 +5,7 @@ export interface OrderCreatedEvent {
   subject: Subjects.OrderCreated;
   data: {
     id: string;
+    version: number; //to solve concurrent issue
     status: OrderStatus;
     userId: string;
     expiresAt: string;
