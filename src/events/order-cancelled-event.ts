@@ -1,10 +1,10 @@
-import { Subjects } from "./subjects";
+import { Subjects } from './subjects';
 
 export interface OrderCancelledEvent {
   subject: Subjects.OrderCancelled;
   data: {
     id: string;
-    version: number; //to solve concurrent issue
+    version: number;
     ticket: {
       id: string;
     };

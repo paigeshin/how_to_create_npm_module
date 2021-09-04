@@ -1,10 +1,10 @@
-import { Subjects } from "./subjects";
+import { Subjects } from './subjects';
 
 export interface TicketUpdatedEvent {
   subject: Subjects.TicketUpdated;
   data: {
     id: string;
-    version: number; //to solve concurrent issue
+    version: number;
     title: string;
     price: number;
     userId: string;
